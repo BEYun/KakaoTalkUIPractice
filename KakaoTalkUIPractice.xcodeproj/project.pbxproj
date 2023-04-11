@@ -1,0 +1,715 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8C3134EE30B695A5CDF38FF7 /* Pods_KakaoTalkUIPractice.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA02A1255A80E81856FB3A9A /* Pods_KakaoTalkUIPractice.framework */; };
+		AE0C470829C9472800DDAD42 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0C470729C9472800DDAD42 /* AppDelegate.swift */; };
+		AE0C470A29C9472800DDAD42 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0C470929C9472800DDAD42 /* SceneDelegate.swift */; };
+		AE0C470C29C9472800DDAD42 /* DialogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0C470B29C9472800DDAD42 /* DialogViewController.swift */; };
+		AE0C470F29C9472800DDAD42 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE0C470D29C9472800DDAD42 /* Main.storyboard */; };
+		AE0C471129C9472A00DDAD42 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE0C471029C9472A00DDAD42 /* Assets.xcassets */; };
+		AE0C471429C9472A00DDAD42 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE0C471229C9472A00DDAD42 /* LaunchScreen.storyboard */; };
+		AE2A24A329DFAEAB00D09754 /* DialogDataSourceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2A24A229DFAEAB00D09754 /* DialogDataSourceProtocol.swift */; };
+		AE2A24A629DFD32E00D09754 /* DynamicHeightCellProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2A24A529DFD32E00D09754 /* DynamicHeightCellProtocol.swift */; };
+		AE41A00129CBCA9E00DBF08D /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE41A00029CBCA9E00DBF08D /* User.swift */; };
+		AE5AD37629DA572000576E5E /* DialogViewController + SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5AD37529DA572000576E5E /* DialogViewController + SearchBar.swift */; };
+		AE77D4DE29D270E200930E59 /* MyDialogTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE77D4DC29D270E200930E59 /* MyDialogTableViewCell.swift */; };
+		AE77D4DF29D270E200930E59 /* MyDialogTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE77D4DD29D270E200930E59 /* MyDialogTableViewCell.xib */; };
+		AE77D4E229D2710C00930E59 /* OpponentDialogTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE77D4E029D2710C00930E59 /* OpponentDialogTableViewCell.swift */; };
+		AE77D4E329D2710C00930E59 /* OpponentDialogTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE77D4E129D2710C00930E59 /* OpponentDialogTableViewCell.xib */; };
+		AE880CCF29CA8FB60094E686 /* Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE880CCE29CA8FB60094E686 /* Constraints.swift */; };
+		AE880CD329CACA8C0094E686 /* UITextViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE880CD229CACA8C0094E686 /* UITextViewExtension.swift */; };
+		AE90336D29DBE92400D8E7CB /* KakaoEntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE90336C29DBE92400D8E7CB /* KakaoEntryViewController.swift */; };
+		AE90337029DBEB9400D8E7CB /* DialogViewController + TextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE90336F29DBEB9400D8E7CB /* DialogViewController + TextView.swift */; };
+		AE90337229DBEBCC00D8E7CB /* DialogViewController + PHPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE90337129DBEBCC00D8E7CB /* DialogViewController + PHPicker.swift */; };
+		AE93CCB929DC186900E689E1 /* PushViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE93CCB829DC186900E689E1 /* PushViewControllerDelegate.swift */; };
+		AE9C203229D3C5E5009BECDF /* DialogViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9C203129D3C5E5009BECDF /* DialogViewModel.swift */; };
+		AE9C203429D3C5FA009BECDF /* DialogList.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9C203329D3C5FA009BECDF /* DialogList.swift */; };
+		AE9C203629D3C616009BECDF /* MessageContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9C203529D3C616009BECDF /* MessageContent.swift */; };
+		AEA38E7929DEC0E800388A12 /* ImageQuality.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA38E7829DEC0E800388A12 /* ImageQuality.swift */; };
+		AEAAC7D829D3D1C3007D10CB /* DialogDataSourceProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEAAC7D729D3D1C3007D10CB /* DialogDataSourceProvider.swift */; };
+		AEAAC7DA29D40C11007D10CB /* UserDefaultsKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEAAC7D929D40C11007D10CB /* UserDefaultsKey.swift */; };
+		AECF1D4229CD3DEC008F961F /* ContentLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AECF1D4129CD3DEC008F961F /* ContentLabel.swift */; };
+		AED2540D29DBEDA100C5CC9C /* KakaoEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED2540C29DBEDA100C5CC9C /* KakaoEntryView.swift */; };
+		AED2541029DBFB4B00C5CC9C /* ChatGPTEntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED2540F29DBFB4B00C5CC9C /* ChatGPTEntryViewController.swift */; };
+		AED2541229DBFB6200C5CC9C /* ChatGPTViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED2541129DBFB6200C5CC9C /* ChatGPTViewController.swift */; };
+		AED2541429DBFB7B00C5CC9C /* ChatGPTEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED2541329DBFB7B00C5CC9C /* ChatGPTEntryView.swift */; };
+		AED34D6729DCFD5E00D35E57 /* ChatGPTView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED34D6629DCFD5E00D35E57 /* ChatGPTView.swift */; };
+		AED34D6929DD0C0B00D35E57 /* ChatGptAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED34D6829DD0C0B00D35E57 /* ChatGptAPI.swift */; };
+		AED34D6B29DD14D000D35E57 /* Chat.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED34D6A29DD14D000D35E57 /* Chat.swift */; };
+		AED34D6D29DD2AD600D35E57 /* ChatGPT.plist in Resources */ = {isa = PBXBuildFile; fileRef = AED34D6C29DD2AD600D35E57 /* ChatGPT.plist */; };
+		AED34D6F29DD2B3C00D35E57 /* KakaoTalkUIPractice + Bundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED34D6E29DD2B3C00D35E57 /* KakaoTalkUIPractice + Bundle.swift */; };
+		AED5E84D29D542FD00686834 /* UserDummyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED5E84C29D542FD00686834 /* UserDummyData.swift */; };
+		AED5E85029D579E000686834 /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED5E84F29D579E000686834 /* UIImageExtension.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4822C920AFBD10B7CDD9F739 /* Pods-KakaoTalkUIPractice.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KakaoTalkUIPractice.release.xcconfig"; path = "Target Support Files/Pods-KakaoTalkUIPractice/Pods-KakaoTalkUIPractice.release.xcconfig"; sourceTree = "<group>"; };
+		AA02A1255A80E81856FB3A9A /* Pods_KakaoTalkUIPractice.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KakaoTalkUIPractice.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE0C470429C9472800DDAD42 /* KakaoTalkUIPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KakaoTalkUIPractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE0C470729C9472800DDAD42 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AE0C470929C9472800DDAD42 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		AE0C470B29C9472800DDAD42 /* DialogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DialogViewController.swift; sourceTree = "<group>"; };
+		AE0C470E29C9472800DDAD42 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AE0C471029C9472A00DDAD42 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AE0C471329C9472A00DDAD42 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AE0C471529C9472A00DDAD42 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AE2A24A229DFAEAB00D09754 /* DialogDataSourceProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DialogDataSourceProtocol.swift; sourceTree = "<group>"; };
+		AE2A24A529DFD32E00D09754 /* DynamicHeightCellProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DynamicHeightCellProtocol.swift; sourceTree = "<group>"; };
+		AE41A00029CBCA9E00DBF08D /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		AE5AD37529DA572000576E5E /* DialogViewController + SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DialogViewController + SearchBar.swift"; sourceTree = "<group>"; };
+		AE77D4DC29D270E200930E59 /* MyDialogTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyDialogTableViewCell.swift; sourceTree = "<group>"; };
+		AE77D4DD29D270E200930E59 /* MyDialogTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyDialogTableViewCell.xib; sourceTree = "<group>"; };
+		AE77D4E029D2710C00930E59 /* OpponentDialogTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpponentDialogTableViewCell.swift; sourceTree = "<group>"; };
+		AE77D4E129D2710C00930E59 /* OpponentDialogTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OpponentDialogTableViewCell.xib; sourceTree = "<group>"; };
+		AE880CCE29CA8FB60094E686 /* Constraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constraints.swift; sourceTree = "<group>"; };
+		AE880CD229CACA8C0094E686 /* UITextViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextViewExtension.swift; sourceTree = "<group>"; };
+		AE90336C29DBE92400D8E7CB /* KakaoEntryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KakaoEntryViewController.swift; sourceTree = "<group>"; };
+		AE90336F29DBEB9400D8E7CB /* DialogViewController + TextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DialogViewController + TextView.swift"; sourceTree = "<group>"; };
+		AE90337129DBEBCC00D8E7CB /* DialogViewController + PHPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DialogViewController + PHPicker.swift"; sourceTree = "<group>"; };
+		AE93CCB829DC186900E689E1 /* PushViewControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushViewControllerDelegate.swift; sourceTree = "<group>"; };
+		AE9C203129D3C5E5009BECDF /* DialogViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DialogViewModel.swift; sourceTree = "<group>"; };
+		AE9C203329D3C5FA009BECDF /* DialogList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DialogList.swift; sourceTree = "<group>"; };
+		AE9C203529D3C616009BECDF /* MessageContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageContent.swift; sourceTree = "<group>"; };
+		AEA38E7829DEC0E800388A12 /* ImageQuality.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageQuality.swift; sourceTree = "<group>"; };
+		AEAAC7D729D3D1C3007D10CB /* DialogDataSourceProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DialogDataSourceProvider.swift; sourceTree = "<group>"; };
+		AEAAC7D929D40C11007D10CB /* UserDefaultsKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsKey.swift; sourceTree = "<group>"; };
+		AECF1D4129CD3DEC008F961F /* ContentLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentLabel.swift; sourceTree = "<group>"; };
+		AED2540C29DBEDA100C5CC9C /* KakaoEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KakaoEntryView.swift; sourceTree = "<group>"; };
+		AED2540F29DBFB4B00C5CC9C /* ChatGPTEntryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatGPTEntryViewController.swift; sourceTree = "<group>"; };
+		AED2541129DBFB6200C5CC9C /* ChatGPTViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatGPTViewController.swift; sourceTree = "<group>"; };
+		AED2541329DBFB7B00C5CC9C /* ChatGPTEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatGPTEntryView.swift; sourceTree = "<group>"; };
+		AED34D6629DCFD5E00D35E57 /* ChatGPTView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatGPTView.swift; sourceTree = "<group>"; };
+		AED34D6829DD0C0B00D35E57 /* ChatGptAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatGptAPI.swift; sourceTree = "<group>"; };
+		AED34D6A29DD14D000D35E57 /* Chat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chat.swift; sourceTree = "<group>"; };
+		AED34D6C29DD2AD600D35E57 /* ChatGPT.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = ChatGPT.plist; sourceTree = "<group>"; };
+		AED34D6E29DD2B3C00D35E57 /* KakaoTalkUIPractice + Bundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "KakaoTalkUIPractice + Bundle.swift"; sourceTree = "<group>"; };
+		AED5E84C29D542FD00686834 /* UserDummyData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDummyData.swift; sourceTree = "<group>"; };
+		AED5E84F29D579E000686834 /* UIImageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExtension.swift; sourceTree = "<group>"; };
+		FEBD4970AFA889D237C35919 /* Pods-KakaoTalkUIPractice.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KakaoTalkUIPractice.debug.xcconfig"; path = "Target Support Files/Pods-KakaoTalkUIPractice/Pods-KakaoTalkUIPractice.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AE0C470129C9472800DDAD42 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C3134EE30B695A5CDF38FF7 /* Pods_KakaoTalkUIPractice.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		10CE2D1713DE1ADA8999F5BE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AA02A1255A80E81856FB3A9A /* Pods_KakaoTalkUIPractice.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4803BF1B8C4A96D0145FF0A1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FEBD4970AFA889D237C35919 /* Pods-KakaoTalkUIPractice.debug.xcconfig */,
+				4822C920AFBD10B7CDD9F739 /* Pods-KakaoTalkUIPractice.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		AE0C46FB29C9472800DDAD42 = {
+			isa = PBXGroup;
+			children = (
+				AE0C470629C9472800DDAD42 /* KakaoTalkUIPractice */,
+				AE0C470529C9472800DDAD42 /* Products */,
+				4803BF1B8C4A96D0145FF0A1 /* Pods */,
+				10CE2D1713DE1ADA8999F5BE /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		AE0C470529C9472800DDAD42 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AE0C470429C9472800DDAD42 /* KakaoTalkUIPractice.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AE0C470629C9472800DDAD42 /* KakaoTalkUIPractice */ = {
+			isa = PBXGroup;
+			children = (
+				AE419FFF29CBCA8800DBF08D /* Model */,
+				AE880CD429CB0AE90094E686 /* VC */,
+				AED34D7129DD741D00D35E57 /* Services */,
+				AEA38E7329DEB74B00388A12 /* Utils */,
+				AE0C470729C9472800DDAD42 /* AppDelegate.swift */,
+				AE0C470929C9472800DDAD42 /* SceneDelegate.swift */,
+				AE0C471029C9472A00DDAD42 /* Assets.xcassets */,
+				AE0C470D29C9472800DDAD42 /* Main.storyboard */,
+				AE0C471229C9472A00DDAD42 /* LaunchScreen.storyboard */,
+				AE0C471529C9472A00DDAD42 /* Info.plist */,
+				AED34D6C29DD2AD600D35E57 /* ChatGPT.plist */,
+			);
+			path = KakaoTalkUIPractice;
+			sourceTree = "<group>";
+		};
+		AE2A24A429DFAECA00D09754 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				AE2A24A229DFAEAB00D09754 /* DialogDataSourceProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		AE2A24A729DFD33200D09754 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				AE2A24A529DFD32E00D09754 /* DynamicHeightCellProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		AE419FFF29CBCA8800DBF08D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AE41A00029CBCA9E00DBF08D /* User.swift */,
+				AE9C203329D3C5FA009BECDF /* DialogList.swift */,
+				AE9C203529D3C616009BECDF /* MessageContent.swift */,
+				AED5E84C29D542FD00686834 /* UserDummyData.swift */,
+				AED34D6A29DD14D000D35E57 /* Chat.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AE880CC829CA8F5B0094E686 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				AE880CCE29CA8FB60094E686 /* Constraints.swift */,
+				AEAAC7D929D40C11007D10CB /* UserDefaultsKey.swift */,
+				AEA38E7829DEC0E800388A12 /* ImageQuality.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		AE880CC929CA8F650094E686 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				AED34D6E29DD2B3C00D35E57 /* KakaoTalkUIPractice + Bundle.swift */,
+				AE880CD229CACA8C0094E686 /* UITextViewExtension.swift */,
+				AED5E84F29D579E000686834 /* UIImageExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		AE880CD429CB0AE90094E686 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				AED34D7029DD6F2900D35E57 /* MainVC */,
+				AE90336E29DBEA9F00D8E7CB /* KakaoVC */,
+				AED2540E29DBFB1300C5CC9C /* ChatGPTVC */,
+				AE93CCB729DC185600E689E1 /* Delegates */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		AE880CD529CB0AF40094E686 /* CustomTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				AE2A24A729DFD33200D09754 /* Protocols */,
+				AE77D4DC29D270E200930E59 /* MyDialogTableViewCell.swift */,
+				AE77D4E029D2710C00930E59 /* OpponentDialogTableViewCell.swift */,
+				AE77D4DD29D270E200930E59 /* MyDialogTableViewCell.xib */,
+				AE77D4E129D2710C00930E59 /* OpponentDialogTableViewCell.xib */,
+			);
+			path = CustomTableViewCell;
+			sourceTree = "<group>";
+		};
+		AE90336E29DBEA9F00D8E7CB /* KakaoVC */ = {
+			isa = PBXGroup;
+			children = (
+				AED34D6429DCFCEF00D35E57 /* KakaoView */,
+				AE90336C29DBE92400D8E7CB /* KakaoEntryViewController.swift */,
+			);
+			path = KakaoVC;
+			sourceTree = "<group>";
+		};
+		AE93CCB729DC185600E689E1 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				AE93CCB829DC186900E689E1 /* PushViewControllerDelegate.swift */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+		AE9C203929D3CBBE009BECDF /* DataSourceProvider */ = {
+			isa = PBXGroup;
+			children = (
+				AE2A24A429DFAECA00D09754 /* Protocols */,
+				AEAAC7D729D3D1C3007D10CB /* DialogDataSourceProvider.swift */,
+			);
+			path = DataSourceProvider;
+			sourceTree = "<group>";
+		};
+		AEA38E7329DEB74B00388A12 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				AEA38E7729DEC0B600388A12 /* Constants */,
+				AED5E84929D50F5800686834 /* CustomLabel */,
+				AE880CC929CA8F650094E686 /* Extensions */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		AEA38E7729DEC0B600388A12 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				AE880CC829CA8F5B0094E686 /* Enums */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		AED2540E29DBFB1300C5CC9C /* ChatGPTVC */ = {
+			isa = PBXGroup;
+			children = (
+				AED34D6529DCFCFA00D35E57 /* ChatGPTView */,
+				AED2540F29DBFB4B00C5CC9C /* ChatGPTEntryViewController.swift */,
+				AED2541129DBFB6200C5CC9C /* ChatGPTViewController.swift */,
+			);
+			path = ChatGPTVC;
+			sourceTree = "<group>";
+		};
+		AED34D6429DCFCEF00D35E57 /* KakaoView */ = {
+			isa = PBXGroup;
+			children = (
+				AED2540C29DBEDA100C5CC9C /* KakaoEntryView.swift */,
+			);
+			path = KakaoView;
+			sourceTree = "<group>";
+		};
+		AED34D6529DCFCFA00D35E57 /* ChatGPTView */ = {
+			isa = PBXGroup;
+			children = (
+				AED2541329DBFB7B00C5CC9C /* ChatGPTEntryView.swift */,
+				AED34D6629DCFD5E00D35E57 /* ChatGPTView.swift */,
+			);
+			path = ChatGPTView;
+			sourceTree = "<group>";
+		};
+		AED34D7029DD6F2900D35E57 /* MainVC */ = {
+			isa = PBXGroup;
+			children = (
+				AED5E84E29D543E900686834 /* ViewModel */,
+				AE9C203929D3CBBE009BECDF /* DataSourceProvider */,
+				AE880CD529CB0AF40094E686 /* CustomTableViewCell */,
+				AE0C470B29C9472800DDAD42 /* DialogViewController.swift */,
+				AE5AD37529DA572000576E5E /* DialogViewController + SearchBar.swift */,
+				AE90336F29DBEB9400D8E7CB /* DialogViewController + TextView.swift */,
+				AE90337129DBEBCC00D8E7CB /* DialogViewController + PHPicker.swift */,
+			);
+			path = MainVC;
+			sourceTree = "<group>";
+		};
+		AED34D7129DD741D00D35E57 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				AED34D6829DD0C0B00D35E57 /* ChatGptAPI.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		AED5E84929D50F5800686834 /* CustomLabel */ = {
+			isa = PBXGroup;
+			children = (
+				AECF1D4129CD3DEC008F961F /* ContentLabel.swift */,
+			);
+			path = CustomLabel;
+			sourceTree = "<group>";
+		};
+		AED5E84E29D543E900686834 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				AE9C203129D3C5E5009BECDF /* DialogViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AE0C470329C9472800DDAD42 /* KakaoTalkUIPractice */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE0C471829C9472A00DDAD42 /* Build configuration list for PBXNativeTarget "KakaoTalkUIPractice" */;
+			buildPhases = (
+				115DAF187BF32ABC4A5C05CF /* [CP] Check Pods Manifest.lock */,
+				AE0C470029C9472800DDAD42 /* Sources */,
+				AE0C470129C9472800DDAD42 /* Frameworks */,
+				AE0C470229C9472800DDAD42 /* Resources */,
+				6301E6688BED800ABC5C9A86 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KakaoTalkUIPractice;
+			productName = KakaoTalkUIPractice;
+			productReference = AE0C470429C9472800DDAD42 /* KakaoTalkUIPractice.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AE0C46FC29C9472800DDAD42 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					AE0C470329C9472800DDAD42 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = AE0C46FF29C9472800DDAD42 /* Build configuration list for PBXProject "KakaoTalkUIPractice" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AE0C46FB29C9472800DDAD42;
+			productRefGroup = AE0C470529C9472800DDAD42 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AE0C470329C9472800DDAD42 /* KakaoTalkUIPractice */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AE0C470229C9472800DDAD42 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AED34D6D29DD2AD600D35E57 /* ChatGPT.plist in Resources */,
+				AE0C471429C9472A00DDAD42 /* LaunchScreen.storyboard in Resources */,
+				AE77D4E329D2710C00930E59 /* OpponentDialogTableViewCell.xib in Resources */,
+				AE0C471129C9472A00DDAD42 /* Assets.xcassets in Resources */,
+				AE0C470F29C9472800DDAD42 /* Main.storyboard in Resources */,
+				AE77D4DF29D270E200930E59 /* MyDialogTableViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		115DAF187BF32ABC4A5C05CF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KakaoTalkUIPractice-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6301E6688BED800ABC5C9A86 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KakaoTalkUIPractice/Pods-KakaoTalkUIPractice-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KakaoTalkUIPractice/Pods-KakaoTalkUIPractice-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KakaoTalkUIPractice/Pods-KakaoTalkUIPractice-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AE0C470029C9472800DDAD42 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AEA38E7929DEC0E800388A12 /* ImageQuality.swift in Sources */,
+				AED2541229DBFB6200C5CC9C /* ChatGPTViewController.swift in Sources */,
+				AEAAC7DA29D40C11007D10CB /* UserDefaultsKey.swift in Sources */,
+				AED2541029DBFB4B00C5CC9C /* ChatGPTEntryViewController.swift in Sources */,
+				AE0C470C29C9472800DDAD42 /* DialogViewController.swift in Sources */,
+				AED5E85029D579E000686834 /* UIImageExtension.swift in Sources */,
+				AED34D6729DCFD5E00D35E57 /* ChatGPTView.swift in Sources */,
+				AE90337029DBEB9400D8E7CB /* DialogViewController + TextView.swift in Sources */,
+				AE90336D29DBE92400D8E7CB /* KakaoEntryViewController.swift in Sources */,
+				AE77D4E229D2710C00930E59 /* OpponentDialogTableViewCell.swift in Sources */,
+				AED5E84D29D542FD00686834 /* UserDummyData.swift in Sources */,
+				AE0C470829C9472800DDAD42 /* AppDelegate.swift in Sources */,
+				AED34D6929DD0C0B00D35E57 /* ChatGptAPI.swift in Sources */,
+				AE77D4DE29D270E200930E59 /* MyDialogTableViewCell.swift in Sources */,
+				AE880CD329CACA8C0094E686 /* UITextViewExtension.swift in Sources */,
+				AEAAC7D829D3D1C3007D10CB /* DialogDataSourceProvider.swift in Sources */,
+				AED2541429DBFB7B00C5CC9C /* ChatGPTEntryView.swift in Sources */,
+				AED34D6B29DD14D000D35E57 /* Chat.swift in Sources */,
+				AE41A00129CBCA9E00DBF08D /* User.swift in Sources */,
+				AE90337229DBEBCC00D8E7CB /* DialogViewController + PHPicker.swift in Sources */,
+				AE93CCB929DC186900E689E1 /* PushViewControllerDelegate.swift in Sources */,
+				AE2A24A329DFAEAB00D09754 /* DialogDataSourceProtocol.swift in Sources */,
+				AE2A24A629DFD32E00D09754 /* DynamicHeightCellProtocol.swift in Sources */,
+				AECF1D4229CD3DEC008F961F /* ContentLabel.swift in Sources */,
+				AE9C203229D3C5E5009BECDF /* DialogViewModel.swift in Sources */,
+				AE880CCF29CA8FB60094E686 /* Constraints.swift in Sources */,
+				AE5AD37629DA572000576E5E /* DialogViewController + SearchBar.swift in Sources */,
+				AE9C203629D3C616009BECDF /* MessageContent.swift in Sources */,
+				AE0C470A29C9472800DDAD42 /* SceneDelegate.swift in Sources */,
+				AE9C203429D3C5FA009BECDF /* DialogList.swift in Sources */,
+				AED34D6F29DD2B3C00D35E57 /* KakaoTalkUIPractice + Bundle.swift in Sources */,
+				AED2540D29DBEDA100C5CC9C /* KakaoEntryView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		AE0C470D29C9472800DDAD42 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AE0C470E29C9472800DDAD42 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AE0C471229C9472A00DDAD42 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AE0C471329C9472A00DDAD42 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AE0C471629C9472A00DDAD42 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AE0C471729C9472A00DDAD42 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AE0C471929C9472A00DDAD42 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FEBD4970AFA889D237C35919 /* Pods-KakaoTalkUIPractice.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZAL935K4Y8;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = KakaoTalkUIPractice/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = test.BEYun.KakaoTalkUIPractice2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AE0C471A29C9472A00DDAD42 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4822C920AFBD10B7CDD9F739 /* Pods-KakaoTalkUIPractice.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZAL935K4Y8;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = KakaoTalkUIPractice/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = test.BEYun.KakaoTalkUIPractice2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AE0C46FF29C9472800DDAD42 /* Build configuration list for PBXProject "KakaoTalkUIPractice" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE0C471629C9472A00DDAD42 /* Debug */,
+				AE0C471729C9472A00DDAD42 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AE0C471829C9472A00DDAD42 /* Build configuration list for PBXNativeTarget "KakaoTalkUIPractice" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE0C471929C9472A00DDAD42 /* Debug */,
+				AE0C471A29C9472A00DDAD42 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AE0C46FC29C9472800DDAD42 /* Project object */;
+}

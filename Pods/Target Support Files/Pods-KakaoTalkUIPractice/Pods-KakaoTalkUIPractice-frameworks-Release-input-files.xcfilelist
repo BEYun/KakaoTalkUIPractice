@@ -1,0 +1,4 @@
+${PODS_ROOT}/Target Support Files/Pods-KakaoTalkUIPractice/Pods-KakaoTalkUIPractice-frameworks.sh
+${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework
+${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework
+${BUILT_PRODUCTS_DIR}/Then/Then.framework

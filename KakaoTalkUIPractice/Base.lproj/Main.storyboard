@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="dT8-eH-Umn">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tab Bar Controller-->
+        <scene sceneID="i2t-Ot-Vrt">
+            <objects>
+                <tabBarController id="dT8-eH-Umn" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="z2n-kN-nza">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="xe9-MA-AWi" kind="relationship" relationship="viewControllers" id="qbj-cA-S0M"/>
+                        <segue destination="SzC-x2-XQ8" kind="relationship" relationship="viewControllers" id="A35-v5-wAg"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4xt-bw-FP6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2934" y="-1130"/>
+        </scene>
+        <!--ChatGPT-->
+        <scene sceneID="p17-Vw-Pis">
+            <objects>
+                <navigationController id="SzC-x2-XQ8" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="ChatGPT" id="b7c-xD-bix"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="AEA-Cl-ImX">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="1HG-xo-QoR" kind="relationship" relationship="rootViewController" id="UCP-fs-oes"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LP3-lb-VuK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2184" y="-404"/>
+        </scene>
+        <!--ChatGPT Entry View Controller-->
+        <scene sceneID="wot-F7-YyD">
+            <objects>
+                <viewController id="1HG-xo-QoR" customClass="ChatGPTEntryViewController" customModule="KakaoTalkUIPractice" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ci1-MT-i9s">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="jtO-JG-iMC"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="dbW-SJ-Na2"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wb8-fN-nD4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2153" y="325"/>
+        </scene>
+        <!--카카오톡-->
+        <scene sceneID="XDK-1t-dkK">
+            <objects>
+                <navigationController id="xe9-MA-AWi" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="카카오톡" id="enE-f7-4aC"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ufQ-S4-6MI">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="cdZ-9m-9DI" kind="relationship" relationship="rootViewController" id="Ag9-75-lWK"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sPx-5H-g2s" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3618" y="-404"/>
+        </scene>
+        <!--Kakao Entry View Controller-->
+        <scene sceneID="pwS-jg-aAN">
+            <objects>
+                <viewController id="cdZ-9m-9DI" customClass="KakaoEntryViewController" customModule="KakaoTalkUIPractice" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="m2i-Ot-rL2">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="F8w-nz-uXU"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="PqH-DE-6Fu"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SuP-k2-Emr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3621" y="316"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="KakaoViewController" hidesBottomBarWhenPushed="YES" id="BYZ-38-t0r" userLabel="View Controller" customClass="DialogViewController" customModule="KakaoTalkUIPractice" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view autoresizesSubviews="NO" clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M34-Sc-Ddk" userLabel="Main View">
+                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vba-Wq-lJw" userLabel="Main Wrapper View">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="759"/>
+                                        <subviews>
+                                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" indicatorStyle="white" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Y0T-Y8-zY7" userLabel="Dialog Table View">
+                                                <rect key="frame" x="0.0" y="0.0" width="393" height="717"/>
+                                                <color key="backgroundColor" red="0.14902630450000001" green="0.14894491430000001" blue="0.1568637192" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </tableView>
+                                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b6P-pj-48J" userLabel="Bottom View">
+                                                <rect key="frame" x="0.0" y="717" width="393" height="42"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="map-vx-mqF" userLabel="Add Image Button">
+                                                        <rect key="frame" x="5" y="9.333333333333373" width="25" height="22.666666666666671"/>
+                                                        <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" image="plus" catalog="system">
+                                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="23"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="addImageButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1jj-pj-Oo0"/>
+                                                        </connections>
+                                                    </button>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9vo-xC-uvP" userLabel="Bottom Input View">
+                                                        <rect key="frame" x="35" y="5" width="348" height="32"/>
+                                                        <subviews>
+                                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="iGd-lB-zQ4">
+                                                                <rect key="frame" x="0.0" y="0.0" width="276" height="32"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                            </textView>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2ro-y7-mvL" userLabel="Add Emoji Button">
+                                                                <rect key="frame" x="281" y="2.6666666666666288" width="27" height="26.333333333333332"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                <state key="normal" image="face.smiling" catalog="system">
+                                                                    <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="23"/>
+                                                                </state>
+                                                            </button>
+                                                            <stackView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KtN-g7-VQu">
+                                                                <rect key="frame" x="313" y="-3.3333333333333712" width="30" height="38"/>
+                                                                <subviews>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GmK-aC-AcZ" userLabel="HashTag Button">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="30" height="38"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                        <state key="normal" title="#">
+                                                                            <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        </state>
+                                                                    </button>
+                                                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5yh-IB-20v" userLabel="Submit Button">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="0.0" height="38"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                        <color key="tintColor" red="0.97428935770000002" green="0.90140748020000006" blue="0.30177122350000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                        <state key="normal" image="arrow.up.circle.fill" catalog="system">
+                                                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="25"/>
+                                                                        </state>
+                                                                        <state key="disabled" image="arrow.up.circle" catalog="system"/>
+                                                                        <connections>
+                                                                            <action selector="submitButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="By8-Ab-EuP"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                </subviews>
+                                                            </stackView>
+                                                        </subviews>
+                                                        <color key="backgroundColor" red="0.39459602795925341" green="0.39459602795925341" blue="0.39459602795925341" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <constraints>
+                                                            <constraint firstItem="iGd-lB-zQ4" firstAttribute="top" secondItem="9vo-xC-uvP" secondAttribute="top" id="40s-zR-9kH"/>
+                                                            <constraint firstAttribute="bottom" secondItem="iGd-lB-zQ4" secondAttribute="bottom" id="8CT-sq-mvB"/>
+                                                            <constraint firstItem="iGd-lB-zQ4" firstAttribute="leading" secondItem="9vo-xC-uvP" secondAttribute="leading" id="Ond-rA-Rqj"/>
+                                                            <constraint firstAttribute="trailing" secondItem="KtN-g7-VQu" secondAttribute="trailing" constant="5" id="Phx-WC-0mP"/>
+                                                            <constraint firstItem="KtN-g7-VQu" firstAttribute="leading" secondItem="2ro-y7-mvL" secondAttribute="trailing" constant="5" id="ghP-DA-h40"/>
+                                                            <constraint firstItem="2ro-y7-mvL" firstAttribute="leading" secondItem="iGd-lB-zQ4" secondAttribute="trailing" constant="5" id="xX8-pW-szW"/>
+                                                        </constraints>
+                                                    </view>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstItem="9vo-xC-uvP" firstAttribute="leading" secondItem="b6P-pj-48J" secondAttribute="leading" constant="35" id="NS8-xM-Tt9"/>
+                                                    <constraint firstItem="2ro-y7-mvL" firstAttribute="centerY" secondItem="map-vx-mqF" secondAttribute="centerY" id="TZB-V8-Lb7"/>
+                                                    <constraint firstAttribute="height" constant="42" id="afi-ZZ-4Pp"/>
+                                                    <constraint firstItem="KtN-g7-VQu" firstAttribute="centerY" secondItem="map-vx-mqF" secondAttribute="centerY" id="gij-T0-byc"/>
+                                                    <constraint firstAttribute="bottom" secondItem="9vo-xC-uvP" secondAttribute="bottom" constant="5" id="iZR-IK-wau"/>
+                                                    <constraint firstItem="9vo-xC-uvP" firstAttribute="leading" secondItem="map-vx-mqF" secondAttribute="trailing" constant="5" id="kjb-yp-xk4"/>
+                                                    <constraint firstItem="map-vx-mqF" firstAttribute="leading" secondItem="b6P-pj-48J" secondAttribute="leading" constant="5" id="oPw-zb-ie4"/>
+                                                    <constraint firstAttribute="trailing" secondItem="9vo-xC-uvP" secondAttribute="trailing" constant="10" id="t1b-Bf-say"/>
+                                                    <constraint firstAttribute="bottom" secondItem="map-vx-mqF" secondAttribute="bottom" constant="10" id="uhM-RY-LWl"/>
+                                                    <constraint firstItem="9vo-xC-uvP" firstAttribute="top" secondItem="b6P-pj-48J" secondAttribute="top" constant="5" id="unQ-6L-oFX"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.14902630450000001" green="0.14894491430000001" blue="0.1568637192" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="b6P-pj-48J" secondAttribute="bottom" id="243-IA-mjC"/>
+                                            <constraint firstItem="Y0T-Y8-zY7" firstAttribute="leading" secondItem="vba-Wq-lJw" secondAttribute="leading" id="CUq-x3-f5P"/>
+                                            <constraint firstItem="Y0T-Y8-zY7" firstAttribute="top" secondItem="vba-Wq-lJw" secondAttribute="top" id="GLW-zk-6Z0"/>
+                                            <constraint firstAttribute="trailing" secondItem="b6P-pj-48J" secondAttribute="trailing" id="IIQ-qw-ysJ"/>
+                                            <constraint firstItem="b6P-pj-48J" firstAttribute="top" secondItem="Y0T-Y8-zY7" secondAttribute="bottom" id="dNT-R0-76e"/>
+                                            <constraint firstItem="b6P-pj-48J" firstAttribute="leading" secondItem="vba-Wq-lJw" secondAttribute="leading" id="fgb-pL-rQk"/>
+                                            <constraint firstAttribute="trailing" secondItem="Y0T-Y8-zY7" secondAttribute="trailing" id="gZw-qy-5GY"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="vba-Wq-lJw" secondAttribute="trailing" id="8AO-xF-TrS"/>
+                                    <constraint firstAttribute="bottom" secondItem="vba-Wq-lJw" secondAttribute="bottom" id="I7h-z4-Hgn"/>
+                                    <constraint firstItem="vba-Wq-lJw" firstAttribute="leading" secondItem="M34-Sc-Ddk" secondAttribute="leading" id="L7c-or-5gS"/>
+                                    <constraint firstItem="vba-Wq-lJw" firstAttribute="top" secondItem="M34-Sc-Ddk" secondAttribute="top" id="pfG-Cl-wC8"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="M34-Sc-Ddk" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="2oG-2P-FNG"/>
+                            <constraint firstItem="M34-Sc-Ddk" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Ibc-cb-Et2"/>
+                            <constraint firstItem="M34-Sc-Ddk" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="g76-EE-JYO"/>
+                            <constraint firstItem="M34-Sc-Ddk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="wR0-nT-Nnd"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Title" id="uw9-Zi-gZE"/>
+                    <connections>
+                        <outlet property="addImageButton" destination="map-vx-mqF" id="vaZ-1b-Yem"/>
+                        <outlet property="bottomInputView" destination="9vo-xC-uvP" id="Hja-TQ-iVN"/>
+                        <outlet property="bottomView" destination="b6P-pj-48J" id="Kqs-bN-eZe"/>
+                        <outlet property="bottomViewHeightConstraint" destination="afi-ZZ-4Pp" id="S0o-tW-6yh"/>
+                        <outlet property="dialogTableView" destination="Y0T-Y8-zY7" id="dsD-xd-gWd"/>
+                        <outlet property="hashTagButton" destination="GmK-aC-AcZ" id="S2j-qC-igD"/>
+                        <outlet property="mainWrapperView" destination="vba-Wq-lJw" id="Lbo-oV-kE8"/>
+                        <outlet property="submitButton" destination="5yh-IB-20v" id="h1h-CS-LRO"/>
+                        <outlet property="textView" destination="iGd-lB-zQ4" id="IpE-nN-rOY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2897" y="1015"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="arrow.up.circle" catalog="system" width="128" height="123"/>
+        <image name="arrow.up.circle.fill" catalog="system" width="128" height="123"/>
+        <image name="face.smiling" catalog="system" width="128" height="123"/>
+        <image name="plus" catalog="system" width="128" height="113"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
