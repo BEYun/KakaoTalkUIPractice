@@ -16,6 +16,18 @@ struct ChatResponseDTO: Codable {
     let usage: Usage
 }
 
+extension ChatResponseDTO {
+    func toModel() -> Chat {
+        guard let message = choices.first?.message else {
+            return Chat(role: "assistance", content: "Message Error")
+        }
+        
+        let role = message.role
+        let content = message.content
+        return .init(role: role, content: content)
+    }
+}
+
 // MARK: Choice
 struct Choice: Codable {
     let index: Int

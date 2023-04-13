@@ -102,7 +102,7 @@ extension DialogViewModel {
         return dialog.messages.count
     }
     
-    func getHourAndMinutes(_ date: Date) -> String {
+    func getCurretTime(_ date: Date) -> String {
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "HH:mm"
         let dateString = dateFormatter.string(from: date)
@@ -118,11 +118,18 @@ extension DialogViewModel {
         content = MessageContent(senderID: myID, textContent: message)
         dialog.messages.append(content)
         
-        if opponentID == chatGPTID {
-            chatGPTnetworkRepository.fetchData(query: message, completion: { result in
+        if let opponentID = opponentID, opponentID == chatGPTID {
+            chatGPTnetworkRepository.fetchData(query: message, completion: { [weak self] result in
                 switch result {
                 case .success(let data):
-                    print(data)
+                    let chat = data.toModel()
+                    let chatMessage = chat.content
+                    let content = MessageContent(senderID: opponentID, textContent: chatMessage)
+                    self?.dialog.messages.append(content)
+                    
+                    DispatchQueue.main.async {
+                        self?.delegate?.updateTableView()
+                    }
                 case .failure(let error):
                     print(error)
                 }

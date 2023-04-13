@@ -56,7 +56,7 @@ extension ChatGPTNetworkRepository: ChatGPTResultType {
         do {
             let request = try makeRequest()
             self.networkService.networkRequest(request: request) { result in
-                // networkRequest의 completionHandler의 제네릭 타입을 Result<Data, NetworkError>로 명시
+                // networkRequest의 completionHandler의 제네릭 타입을 Result<ChatResponseDTO, NetworkError>로 타입 캐스팅
                 let result = result as ResultType
                 switch result {
                 case .success(let data):

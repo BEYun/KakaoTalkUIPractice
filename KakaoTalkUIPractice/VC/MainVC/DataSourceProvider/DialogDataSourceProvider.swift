@@ -51,7 +51,7 @@ extension DialogDataSourceProvider: UITableViewDelegate, UITableViewDataSource {
         }
         
         let message = myDialog[indexPath.row]
-        let date = dialogViewModel.getHourAndMinutes(message.inputDate)
+        let date = dialogViewModel.getCurretTime(message.inputDate)
         
         let sender = dialogViewModel.getUser(message.senderID)
         let profileImage = sender.profileImageURL
