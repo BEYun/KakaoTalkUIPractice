@@ -19,6 +19,7 @@ class DialogViewModel {
     weak var delegate: UpdateTableViewDelegate?
     
     private let chatGPTnetworkRepository = ChatGPTNetworkRepository(networkService: NetworkService())
+    private let userDefaults = UserDefaults.standard
     
     let myID: Int = 1
     let chatGPTID = 3
@@ -28,14 +29,7 @@ class DialogViewModel {
     private var dialogList: [Dialog] = []
     
     lazy var opponentDialogIndex = dialogList.firstIndex(where: {$0.opponent.id == opponentID}) ?? 0
-    
-    let userDefaults = UserDefaults.standard
-    
-    lazy var dialog = dialogList[opponentDialogIndex] {
-        didSet {
-            dialogList[opponentDialogIndex] = dialog
-        }
-    }
+    lazy var dialog = dialogList[opponentDialogIndex]
     
     // userDefaults set
     func saveDialog(_ dialogList: [Dialog]) {
@@ -117,6 +111,7 @@ extension DialogViewModel {
 
         content = MessageContent(senderID: myID, textContent: message)
         dialog.messages.append(content)
+        dialogList[opponentDialogIndex] = dialog
         
         if let opponentID = opponentID, opponentID == chatGPTID {
             chatGPTnetworkRepository.fetchData(query: message, completion: { [weak self] result in
@@ -127,6 +122,7 @@ extension DialogViewModel {
                     let content = MessageContent(senderID: opponentID, textContent: chatMessage)
                     self?.dialog.messages.append(content)
                     
+                    
                     DispatchQueue.main.async {
                         self?.delegate?.updateTableView()
                     }
@@ -134,6 +130,7 @@ extension DialogViewModel {
                     print(error)
                 }
             })
+            dialogList[opponentDialogIndex] = dialog
         } else {
             saveDialog(dialogList)
         }
@@ -142,6 +139,7 @@ extension DialogViewModel {
     func addImageDialog(_ message: Data) {
         let content = MessageContent(senderID: myID, imageContent: message)
         dialog.messages.append(content)
+        dialogList[opponentDialogIndex] = dialog
         saveDialog(dialogList)
     }
 }

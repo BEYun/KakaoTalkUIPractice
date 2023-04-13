@@ -17,7 +17,7 @@
 		AE2A24A329DFAEAB00D09754 /* DialogDataSourceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2A24A229DFAEAB00D09754 /* DialogDataSourceProtocol.swift */; };
 		AE2A24A629DFD32E00D09754 /* DynamicHeightCellProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2A24A529DFD32E00D09754 /* DynamicHeightCellProtocol.swift */; };
 		AE36A10229E7BCA1000A5B71 /* ChatGPTNetworkRepository+DTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE36A10129E7BCA1000A5B71 /* ChatGPTNetworkRepository+DTO.swift */; };
-		AE37478B29E628DA0010D227 /* EndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE37478A29E628DA0010D227 /* EndPoint.swift */; };
+		AE36A10429E7EE43000A5B71 /* ChatGPTEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE36A10329E7EE43000A5B71 /* ChatGPTEndPoint.swift */; };
 		AE41A00129CBCA9E00DBF08D /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE41A00029CBCA9E00DBF08D /* User.swift */; };
 		AE5AD37629DA572000576E5E /* DialogViewController + SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5AD37529DA572000576E5E /* DialogViewController + SearchBar.swift */; };
 		AE77D4DE29D270E200930E59 /* MyDialogTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE77D4DC29D270E200930E59 /* MyDialogTableViewCell.swift */; };
@@ -65,7 +65,7 @@
 		AE2A24A229DFAEAB00D09754 /* DialogDataSourceProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DialogDataSourceProtocol.swift; sourceTree = "<group>"; };
 		AE2A24A529DFD32E00D09754 /* DynamicHeightCellProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DynamicHeightCellProtocol.swift; sourceTree = "<group>"; };
 		AE36A10129E7BCA1000A5B71 /* ChatGPTNetworkRepository+DTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ChatGPTNetworkRepository+DTO.swift"; sourceTree = "<group>"; };
-		AE37478A29E628DA0010D227 /* EndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPoint.swift; sourceTree = "<group>"; };
+		AE36A10329E7EE43000A5B71 /* ChatGPTEndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatGPTEndPoint.swift; sourceTree = "<group>"; };
 		AE41A00029CBCA9E00DBF08D /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		AE5AD37529DA572000576E5E /* DialogViewController + SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DialogViewController + SearchBar.swift"; sourceTree = "<group>"; };
 		AE77D4DC29D270E200930E59 /* MyDialogTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyDialogTableViewCell.swift; sourceTree = "<group>"; };
@@ -151,7 +151,7 @@
 			isa = PBXGroup;
 			children = (
 				AE419FFF29CBCA8800DBF08D /* Model */,
-				AE880CD429CB0AE90094E686 /* VC */,
+				AE880CD429CB0AE90094E686 /* ViewControllers */,
 				AE37478729E628790010D227 /* Data */,
 				AED34D7129DD741D00D35E57 /* Services */,
 				AEA38E7329DEB74B00388A12 /* Utils */,
@@ -182,10 +182,17 @@
 			path = Protocols;
 			sourceTree = "<group>";
 		};
+		AE36A10529E80EAE000A5B71 /* EndPoints */ = {
+			isa = PBXGroup;
+			children = (
+				AE36A10329E7EE43000A5B71 /* ChatGPTEndPoint.swift */,
+			);
+			path = EndPoints;
+			sourceTree = "<group>";
+		};
 		AE37478729E628790010D227 /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				AE37478929E628C50010D227 /* Network */,
 				AE37478829E628820010D227 /* Repository */,
 			);
 			path = Data;
@@ -200,22 +207,14 @@
 			path = Repository;
 			sourceTree = "<group>";
 		};
-		AE37478929E628C50010D227 /* Network */ = {
-			isa = PBXGroup;
-			children = (
-				AE37478A29E628DA0010D227 /* EndPoint.swift */,
-			);
-			path = Network;
-			sourceTree = "<group>";
-		};
 		AE419FFF29CBCA8800DBF08D /* Model */ = {
 			isa = PBXGroup;
 			children = (
 				AE41A00029CBCA9E00DBF08D /* User.swift */,
 				AE9C203329D3C5FA009BECDF /* DialogList.swift */,
 				AE9C203529D3C616009BECDF /* MessageContent.swift */,
-				AED5E84C29D542FD00686834 /* UserDummyData.swift */,
 				AED34D6A29DD14D000D35E57 /* Chat.swift */,
+				AED5E84C29D542FD00686834 /* UserDummyData.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -240,15 +239,15 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
-		AE880CD429CB0AE90094E686 /* VC */ = {
+		AE880CD429CB0AE90094E686 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				AED34D7029DD6F2900D35E57 /* MainVC */,
-				AE90336E29DBEA9F00D8E7CB /* KakaoVC */,
-				AED2540E29DBFB1300C5CC9C /* ChatGPTVC */,
+				AED34D7029DD6F2900D35E57 /* MainViewController */,
+				AE90336E29DBEA9F00D8E7CB /* KakaoViewController */,
+				AED2540E29DBFB1300C5CC9C /* ChatGPTViewController */,
 				AE93CCB729DC185600E689E1 /* Delegates */,
 			);
-			path = VC;
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 		AE880CD529CB0AF40094E686 /* CustomTableViewCell */ = {
@@ -263,13 +262,13 @@
 			path = CustomTableViewCell;
 			sourceTree = "<group>";
 		};
-		AE90336E29DBEA9F00D8E7CB /* KakaoVC */ = {
+		AE90336E29DBEA9F00D8E7CB /* KakaoViewController */ = {
 			isa = PBXGroup;
 			children = (
 				AED34D6429DCFCEF00D35E57 /* KakaoView */,
 				AE90336C29DBE92400D8E7CB /* KakaoEntryViewController.swift */,
 			);
-			path = KakaoVC;
+			path = KakaoViewController;
 			sourceTree = "<group>";
 		};
 		AE93CCB729DC185600E689E1 /* Delegates */ = {
@@ -307,14 +306,14 @@
 			path = Constants;
 			sourceTree = "<group>";
 		};
-		AED2540E29DBFB1300C5CC9C /* ChatGPTVC */ = {
+		AED2540E29DBFB1300C5CC9C /* ChatGPTViewController */ = {
 			isa = PBXGroup;
 			children = (
 				AED34D6529DCFCFA00D35E57 /* ChatGPTView */,
 				AED2540F29DBFB4B00C5CC9C /* ChatGPTEntryViewController.swift */,
 				AED2541129DBFB6200C5CC9C /* ChatGPTViewController.swift */,
 			);
-			path = ChatGPTVC;
+			path = ChatGPTViewController;
 			sourceTree = "<group>";
 		};
 		AED34D6429DCFCEF00D35E57 /* KakaoView */ = {
@@ -334,7 +333,7 @@
 			path = ChatGPTView;
 			sourceTree = "<group>";
 		};
-		AED34D7029DD6F2900D35E57 /* MainVC */ = {
+		AED34D7029DD6F2900D35E57 /* MainViewController */ = {
 			isa = PBXGroup;
 			children = (
 				AED5E84E29D543E900686834 /* ViewModel */,
@@ -345,12 +344,13 @@
 				AE90336F29DBEB9400D8E7CB /* DialogViewController + TextView.swift */,
 				AE90337129DBEBCC00D8E7CB /* DialogViewController + PHPicker.swift */,
 			);
-			path = MainVC;
+			path = MainViewController;
 			sourceTree = "<group>";
 		};
 		AED34D7129DD741D00D35E57 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				AE36A10529E80EAE000A5B71 /* EndPoints */,
 				AED34D6829DD0C0B00D35E57 /* NetworkService.swift */,
 			);
 			path = Services;
@@ -496,7 +496,6 @@
 				AE36A10229E7BCA1000A5B71 /* ChatGPTNetworkRepository+DTO.swift in Sources */,
 				AED2541029DBFB4B00C5CC9C /* ChatGPTEntryViewController.swift in Sources */,
 				AE0C470C29C9472800DDAD42 /* DialogViewController.swift in Sources */,
-				AE37478B29E628DA0010D227 /* EndPoint.swift in Sources */,
 				AED5E85029D579E000686834 /* UIImageExtension.swift in Sources */,
 				AEF1AD7829E56D06003535FB /* ChatGPTNetworkRepository.swift in Sources */,
 				AED34D6729DCFD5E00D35E57 /* ChatGPTView.swift in Sources */,
@@ -522,6 +521,7 @@
 				AE5AD37629DA572000576E5E /* DialogViewController + SearchBar.swift in Sources */,
 				AE9C203629D3C616009BECDF /* MessageContent.swift in Sources */,
 				AE0C470A29C9472800DDAD42 /* SceneDelegate.swift in Sources */,
+				AE36A10429E7EE43000A5B71 /* ChatGPTEndPoint.swift in Sources */,
 				AE9C203429D3C5FA009BECDF /* DialogList.swift in Sources */,
 				AED34D6F29DD2B3C00D35E57 /* KakaoTalkUIPractice + Bundle.swift in Sources */,
 				AED2540D29DBEDA100C5CC9C /* KakaoEntryView.swift in Sources */,

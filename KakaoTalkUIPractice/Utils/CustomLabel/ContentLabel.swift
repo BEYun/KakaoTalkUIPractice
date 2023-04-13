@@ -20,14 +20,14 @@ class ContentLabel: UILabel {
     }
     
     override var intrinsicContentSize: CGSize {
-            let size = super.intrinsicContentSize
-            return CGSize(width: size.width + leftInset + rightInset, height: size.height + topInset + bottomInset)
-        }
+        let size = super.intrinsicContentSize
+        return CGSize(width: size.width + leftInset + rightInset, height: size.height + topInset + bottomInset)
+    }
     
     override var bounds: CGRect {
-            didSet {
-                preferredMaxLayoutWidth = bounds.width - (leftInset + rightInset)
-                
-            }
+        didSet {
+            preferredMaxLayoutWidth = bounds.width - (leftInset + rightInset)
+            
         }
+    }
 }

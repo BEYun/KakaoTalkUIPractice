@@ -16,15 +16,15 @@ class OpponentDialogTableViewCell: UITableViewCell {
     @IBOutlet weak var contentLabel: ContentLabel!
     
     var imageViewConstraint: NSLayoutConstraint? {
-            didSet {
-                if oldValue != nil {
-                    contentImageView.removeConstraint(oldValue!)
-                }
-                if imageViewConstraint != nil {
-                    contentImageView.addConstraint(imageViewConstraint!)
-                }
+        didSet {
+            if oldValue != nil {
+                contentImageView.removeConstraint(oldValue!)
+            }
+            if imageViewConstraint != nil {
+                contentImageView.addConstraint(imageViewConstraint!)
             }
         }
+    }
     
     override func awakeFromNib() {
         super.awakeFromNib()

@@ -64,13 +64,18 @@ final class NetworkService {
     
     // Error Check로 반환된 값을 디코딩하여 다시 제네릭하게 반환
     private func decode<T: Decodable>(data: Data) -> Result<T, NetworkError> {
-            do {
-                let decoded = try JSONDecoder().decode(T.self, from: data)
-                return .success(decoded)
-            } catch {
-                return .failure(NetworkError.decodingError)
-            }
+        do {
+            let decoded = try JSONDecoder().decode(T.self, from: data)
+            return .success(decoded)
+        } catch {
+            return .failure(NetworkError.decodingError)
         }
+    }
+    
+    deinit {
+        print("NetworkService Deinit")
+        task?.cancel()
+    }
 }
 
 extension NetworkService: APINetworkService {

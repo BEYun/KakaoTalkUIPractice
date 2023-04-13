@@ -13,30 +13,18 @@ protocol ChatGPTResultType {
 
 class ChatGPTNetworkRepository {
     private let networkService: NetworkService
-    
     private let openAPIKey = Bundle.main.apiKey
-    
+    // 현재 대화 내용을 모두 가지고 있는 Message 배열
     private var historyMessage: [Message] = []
-    private var currentMessage: Message? {
-        didSet {
-            if let currentChat = currentMessage {
-                historyMessage.append(currentChat)
-            }
-        }
-    }
     
     init(networkService: NetworkService) {
         self.networkService = networkService
     }
     
     func makeRequest() throws -> URLRequest {
-        let baseURLString = "https://api.openai.com"
-        let endpoint = "/v1/chat/completions"
-        guard let url = URL(string: baseURLString + endpoint) else {
-            throw NetworkError.invalidURL
-        }
+        let endpoint = try ChatGPTEndPoint.completions.url
         
-        var request = URLRequest(url: url)
+        var request = URLRequest(url: endpoint)
         request.httpMethod = "POST"
         request.addValue("Bearer \(openAPIKey)", forHTTPHeaderField: "Authorization")
         request.addValue("application/json", forHTTPHeaderField: "Content-Type")
@@ -52,9 +40,12 @@ class ChatGPTNetworkRepository {
 
 extension ChatGPTNetworkRepository: ChatGPTResultType {
     func fetchData(query: String, completion: @escaping (ResultType) -> Void) {
-        currentMessage = Message(role: "user", content: query)
+        let currentMessage = Message(role: "user", content: query)
+        historyMessage.append(currentMessage)
+        
         do {
             let request = try makeRequest()
+            
             self.networkService.networkRequest(request: request) { result in
                 // networkRequest의 completionHandler의 제네릭 타입을 Result<ChatResponseDTO, NetworkError>로 타입 캐스팅
                 let result = result as ResultType

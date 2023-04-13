@@ -24,7 +24,7 @@ extension ChatResponseDTO {
         
         let role = message.role
         let content = message.content
-        return .init(role: role, content: content)
+        return Chat(role: role, content: content)
     }
 }
 
