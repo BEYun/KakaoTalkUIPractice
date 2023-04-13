@@ -18,7 +18,7 @@ extension DialogViewController: UISearchBarDelegate {
         guard let text = searchBar.text else { return }
         
         let filteredArr = messages.enumerated()
-            .filter { $0.element.contentType == .text && $0.element.textContent!.contains(text) }
+            .filter { $0.element.contentType == .text && (($0.element.textContent?.contains(text)) != nil) }
             .map { $0.offset }
         
         if !filteredArr.isEmpty {

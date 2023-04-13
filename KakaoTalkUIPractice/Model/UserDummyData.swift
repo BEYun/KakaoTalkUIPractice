@@ -20,7 +20,7 @@ var message2 = MessageContent(senderID: man.id, textContent: "저기요?")
 var message3 = MessageContent(senderID: woman.id, textContent: "응 말해.")
 var message4 = MessageContent(senderID: woman.id, textContent: "말하하하하ㅏ하라랄라ㅏ라라라라라고고고고ㅗ고고고")
 
-var img = UIImage(named: "1")!.pngData()!
+var img = UIImage(named: "1")?.pngData() ?? Data()
 var image1 = MessageContent(senderID: woman.id, imageContent: img)
 
 var kakaoDialogList = Dialog(opponent: woman, messages: [message1, message2, message3, message4, image1])

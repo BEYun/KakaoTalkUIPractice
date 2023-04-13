@@ -9,8 +9,7 @@ import Foundation
 
 // ID Default 값
 // 사용자와 상대방에 따라 변경되어야 하는 값
-let MY_ID = 1
-let CHAT_GPT_ID = 3
+
 
 protocol UpdateTableViewDelegate: NSObject {
     func updateTableView()
@@ -19,9 +18,10 @@ protocol UpdateTableViewDelegate: NSObject {
 class DialogViewModel {
     weak var delegate: UpdateTableViewDelegate?
     
-    private let chatGptAPI = ChatGptAPI(apiKey: Bundle.main.apiKey)
+    private let chatGPTnetworkRepository = ChatGPTNetworkRepository(networkService: NetworkService())
     
-    let myID: Int = MY_ID
+    let myID: Int = 1
+    let chatGPTID = 3
     var opponentID: Int?
     
     private var users: [User] = [man, woman, chatGPT]
@@ -39,18 +39,34 @@ class DialogViewModel {
     
     // userDefaults set
     func saveDialog(_ dialogList: [Dialog]) {
-        let encodedData = dialogList.map({ try! JSONEncoder().encode($0) })
+        var encodedData: [Data] = []
+        dialogList.forEach({
+            do {
+                let data = try JSONEncoder().encode($0)
+                encodedData.append(data)
+            } catch {
+                print(error)
+            }
+        })
         userDefaults.set(encodedData, forKey: UserDefaultsKey.dialogList.rawValue)
         print("saved!")
     }
     
     // userDefaluts get
     func loadDialog() -> [Dialog] {
-        guard let data = userDefaults.array(forKey: UserDefaultsKey.dialogList.rawValue) as? [Data] else {
+        guard let userDefaultData = userDefaults.array(forKey: UserDefaultsKey.dialogList.rawValue) as? [Data] else {
             print("First Loaded!")
             return [kakaoDialogList, chatGPTDialogList]
         }
-        let decodedData = data.map({ try! JSONDecoder().decode(Dialog.self, from: $0)})
+        var decodedData: [Dialog] = []
+        userDefaultData.forEach({
+            do {
+                let data = try JSONDecoder().decode(Dialog.self, from: $0)
+                decodedData.append(data)
+            } catch {
+                print(error)
+            }
+        })
         print("loaded!")
         return decodedData
     }
@@ -102,16 +118,15 @@ extension DialogViewModel {
         content = MessageContent(senderID: myID, textContent: message)
         dialog.messages.append(content)
         
-        if opponentID == CHAT_GPT_ID {
-            chatGptAPI.fetchMessage(to: message) { chatGPTMessage, error in
-                guard let chatGPTMessage = chatGPTMessage else { return }
-                content = MessageContent(senderID: CHAT_GPT_ID, textContent: chatGPTMessage)
-                self.dialog.messages.append(content)
-                
-                DispatchQueue.main.async {
-                    self.delegate?.updateTableView()
+        if opponentID == chatGPTID {
+            chatGPTnetworkRepository.fetchData(query: message, completion: { result in
+                switch result {
+                case .success(let data):
+                    print(data)
+                case .failure(let error):
+                    print(error)
                 }
-            }
+            })
         } else {
             saveDialog(dialogList)
         }

@@ -14,7 +14,6 @@ class KakaoEntryViewController: UIViewController {
     let kakaoView = KakaoEntryView()
     
     override func loadView() {
-        super.loadView()
         self.view = kakaoView
         
     }

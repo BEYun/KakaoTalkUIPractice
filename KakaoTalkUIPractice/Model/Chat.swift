@@ -11,11 +11,6 @@ struct Chat: Codable {
     let role: String
     let content: String
     
-    init(content: String) {
-        self.role = "user"
-        self.content = content
-    }
-    
     init(role: String, content: String) {
         self.role = role
         self.content = content

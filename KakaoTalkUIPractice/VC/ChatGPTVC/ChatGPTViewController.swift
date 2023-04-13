@@ -13,7 +13,6 @@ import UIKit
 //    private var chatGPTView = ChatGPTView()
 //    
 //    override func loadView() {
-//        super.loadView()
 //        chatGPTView.delegate = self
 //        chatGPTView.viewModel = viewModel
 //        self.view = chatGPTView

@@ -60,14 +60,15 @@ extension OpponentDialogTableViewCell: DynamicHeightCellProtocol {
     
     func setPostedImage(image : UIImage) {
         let aspect = image.size.width / image.size.height
-        
-        var imgConstraint = NSLayoutConstraint(item: contentImageView!, attribute: .width,
+        guard let contentImageView = contentImageView else { return }
+        let imgConstraint = NSLayoutConstraint(item: contentImageView, attribute: .width,
                                                  relatedBy: .equal, toItem: contentImageView,
                                                  attribute: .height, multiplier: aspect, constant: 0.0)
         imgConstraint.priority = UILayoutPriority(999)
         imageViewConstraint = imgConstraint
-        contentImageView.image = image
+        self.contentImageView.image = image
     }
+    
     func configure(message: MessageContent, date: String) {
         let contentType = message.contentType
         
@@ -77,8 +78,7 @@ extension OpponentDialogTableViewCell: DynamicHeightCellProtocol {
             contentImageView.isHidden = true
             
         case .image :
-            if let data = message.imageContent {
-                let img = UIImage(data: data)!
+            if let data = message.imageContent, let img = UIImage(data: data) {
                 setPostedImage(image: img)
             }
             contentImageView.isHidden = false

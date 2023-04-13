@@ -16,6 +16,8 @@
 		AE0C471429C9472A00DDAD42 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE0C471229C9472A00DDAD42 /* LaunchScreen.storyboard */; };
 		AE2A24A329DFAEAB00D09754 /* DialogDataSourceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2A24A229DFAEAB00D09754 /* DialogDataSourceProtocol.swift */; };
 		AE2A24A629DFD32E00D09754 /* DynamicHeightCellProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2A24A529DFD32E00D09754 /* DynamicHeightCellProtocol.swift */; };
+		AE36A10229E7BCA1000A5B71 /* ChatGPTNetworkRepository+DTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE36A10129E7BCA1000A5B71 /* ChatGPTNetworkRepository+DTO.swift */; };
+		AE37478B29E628DA0010D227 /* EndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE37478A29E628DA0010D227 /* EndPoint.swift */; };
 		AE41A00129CBCA9E00DBF08D /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE41A00029CBCA9E00DBF08D /* User.swift */; };
 		AE5AD37629DA572000576E5E /* DialogViewController + SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5AD37529DA572000576E5E /* DialogViewController + SearchBar.swift */; };
 		AE77D4DE29D270E200930E59 /* MyDialogTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE77D4DC29D270E200930E59 /* MyDialogTableViewCell.swift */; };
@@ -40,12 +42,13 @@
 		AED2541229DBFB6200C5CC9C /* ChatGPTViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED2541129DBFB6200C5CC9C /* ChatGPTViewController.swift */; };
 		AED2541429DBFB7B00C5CC9C /* ChatGPTEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED2541329DBFB7B00C5CC9C /* ChatGPTEntryView.swift */; };
 		AED34D6729DCFD5E00D35E57 /* ChatGPTView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED34D6629DCFD5E00D35E57 /* ChatGPTView.swift */; };
-		AED34D6929DD0C0B00D35E57 /* ChatGptAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED34D6829DD0C0B00D35E57 /* ChatGptAPI.swift */; };
+		AED34D6929DD0C0B00D35E57 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED34D6829DD0C0B00D35E57 /* NetworkService.swift */; };
 		AED34D6B29DD14D000D35E57 /* Chat.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED34D6A29DD14D000D35E57 /* Chat.swift */; };
 		AED34D6D29DD2AD600D35E57 /* ChatGPT.plist in Resources */ = {isa = PBXBuildFile; fileRef = AED34D6C29DD2AD600D35E57 /* ChatGPT.plist */; };
 		AED34D6F29DD2B3C00D35E57 /* KakaoTalkUIPractice + Bundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED34D6E29DD2B3C00D35E57 /* KakaoTalkUIPractice + Bundle.swift */; };
 		AED5E84D29D542FD00686834 /* UserDummyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED5E84C29D542FD00686834 /* UserDummyData.swift */; };
 		AED5E85029D579E000686834 /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED5E84F29D579E000686834 /* UIImageExtension.swift */; };
+		AEF1AD7829E56D06003535FB /* ChatGPTNetworkRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEF1AD7729E56D06003535FB /* ChatGPTNetworkRepository.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -61,6 +64,8 @@
 		AE0C471529C9472A00DDAD42 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AE2A24A229DFAEAB00D09754 /* DialogDataSourceProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DialogDataSourceProtocol.swift; sourceTree = "<group>"; };
 		AE2A24A529DFD32E00D09754 /* DynamicHeightCellProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DynamicHeightCellProtocol.swift; sourceTree = "<group>"; };
+		AE36A10129E7BCA1000A5B71 /* ChatGPTNetworkRepository+DTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ChatGPTNetworkRepository+DTO.swift"; sourceTree = "<group>"; };
+		AE37478A29E628DA0010D227 /* EndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPoint.swift; sourceTree = "<group>"; };
 		AE41A00029CBCA9E00DBF08D /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		AE5AD37529DA572000576E5E /* DialogViewController + SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DialogViewController + SearchBar.swift"; sourceTree = "<group>"; };
 		AE77D4DC29D270E200930E59 /* MyDialogTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyDialogTableViewCell.swift; sourceTree = "<group>"; };
@@ -85,12 +90,13 @@
 		AED2541129DBFB6200C5CC9C /* ChatGPTViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatGPTViewController.swift; sourceTree = "<group>"; };
 		AED2541329DBFB7B00C5CC9C /* ChatGPTEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatGPTEntryView.swift; sourceTree = "<group>"; };
 		AED34D6629DCFD5E00D35E57 /* ChatGPTView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatGPTView.swift; sourceTree = "<group>"; };
-		AED34D6829DD0C0B00D35E57 /* ChatGptAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatGptAPI.swift; sourceTree = "<group>"; };
+		AED34D6829DD0C0B00D35E57 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		AED34D6A29DD14D000D35E57 /* Chat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chat.swift; sourceTree = "<group>"; };
 		AED34D6C29DD2AD600D35E57 /* ChatGPT.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = ChatGPT.plist; sourceTree = "<group>"; };
 		AED34D6E29DD2B3C00D35E57 /* KakaoTalkUIPractice + Bundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "KakaoTalkUIPractice + Bundle.swift"; sourceTree = "<group>"; };
 		AED5E84C29D542FD00686834 /* UserDummyData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDummyData.swift; sourceTree = "<group>"; };
 		AED5E84F29D579E000686834 /* UIImageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExtension.swift; sourceTree = "<group>"; };
+		AEF1AD7729E56D06003535FB /* ChatGPTNetworkRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatGPTNetworkRepository.swift; sourceTree = "<group>"; };
 		FEBD4970AFA889D237C35919 /* Pods-KakaoTalkUIPractice.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KakaoTalkUIPractice.debug.xcconfig"; path = "Target Support Files/Pods-KakaoTalkUIPractice/Pods-KakaoTalkUIPractice.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -146,6 +152,7 @@
 			children = (
 				AE419FFF29CBCA8800DBF08D /* Model */,
 				AE880CD429CB0AE90094E686 /* VC */,
+				AE37478729E628790010D227 /* Data */,
 				AED34D7129DD741D00D35E57 /* Services */,
 				AEA38E7329DEB74B00388A12 /* Utils */,
 				AE0C470729C9472800DDAD42 /* AppDelegate.swift */,
@@ -173,6 +180,32 @@
 				AE2A24A529DFD32E00D09754 /* DynamicHeightCellProtocol.swift */,
 			);
 			path = Protocols;
+			sourceTree = "<group>";
+		};
+		AE37478729E628790010D227 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				AE37478929E628C50010D227 /* Network */,
+				AE37478829E628820010D227 /* Repository */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		AE37478829E628820010D227 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				AEF1AD7729E56D06003535FB /* ChatGPTNetworkRepository.swift */,
+				AE36A10129E7BCA1000A5B71 /* ChatGPTNetworkRepository+DTO.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		AE37478929E628C50010D227 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				AE37478A29E628DA0010D227 /* EndPoint.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 		AE419FFF29CBCA8800DBF08D /* Model */ = {
@@ -318,7 +351,7 @@
 		AED34D7129DD741D00D35E57 /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				AED34D6829DD0C0B00D35E57 /* ChatGptAPI.swift */,
+				AED34D6829DD0C0B00D35E57 /* NetworkService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -460,16 +493,19 @@
 				AEA38E7929DEC0E800388A12 /* ImageQuality.swift in Sources */,
 				AED2541229DBFB6200C5CC9C /* ChatGPTViewController.swift in Sources */,
 				AEAAC7DA29D40C11007D10CB /* UserDefaultsKey.swift in Sources */,
+				AE36A10229E7BCA1000A5B71 /* ChatGPTNetworkRepository+DTO.swift in Sources */,
 				AED2541029DBFB4B00C5CC9C /* ChatGPTEntryViewController.swift in Sources */,
 				AE0C470C29C9472800DDAD42 /* DialogViewController.swift in Sources */,
+				AE37478B29E628DA0010D227 /* EndPoint.swift in Sources */,
 				AED5E85029D579E000686834 /* UIImageExtension.swift in Sources */,
+				AEF1AD7829E56D06003535FB /* ChatGPTNetworkRepository.swift in Sources */,
 				AED34D6729DCFD5E00D35E57 /* ChatGPTView.swift in Sources */,
 				AE90337029DBEB9400D8E7CB /* DialogViewController + TextView.swift in Sources */,
 				AE90336D29DBE92400D8E7CB /* KakaoEntryViewController.swift in Sources */,
 				AE77D4E229D2710C00930E59 /* OpponentDialogTableViewCell.swift in Sources */,
 				AED5E84D29D542FD00686834 /* UserDummyData.swift in Sources */,
 				AE0C470829C9472800DDAD42 /* AppDelegate.swift in Sources */,
-				AED34D6929DD0C0B00D35E57 /* ChatGptAPI.swift in Sources */,
+				AED34D6929DD0C0B00D35E57 /* NetworkService.swift in Sources */,
 				AE77D4DE29D270E200930E59 /* MyDialogTableViewCell.swift in Sources */,
 				AE880CD329CACA8C0094E686 /* UITextViewExtension.swift in Sources */,
 				AEAAC7D829D3D1C3007D10CB /* DialogDataSourceProvider.swift in Sources */,

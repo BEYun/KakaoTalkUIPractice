@@ -15,7 +15,6 @@ class ChatGPTEntryViewController: UIViewController {
     let chatGPTView = ChatGPTEntryView()
         
     override func loadView() {
-        super.loadView()
         self.view = chatGPTView
     }
     
